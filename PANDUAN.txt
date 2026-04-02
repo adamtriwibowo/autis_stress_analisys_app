@@ -6,11 +6,15 @@
 ================================================================================
                          CARA JALANKAN 
 ================================================================================
-
-   Double-click file ini: RUN.bat
+   1. Buka folder Backend
+   Double-click file ini: RUN_BACKEND.bat
    
-   Script akan menjalankan backend + frontend otomatis!
+   Script akan menjalankan backend server
+   2. Buka folder frontend
+   Double-click file ini: RUN_FRONTEND.bat
 
+   tunggu browser otomatis terbuka
+   jangan tutup jendela CLI biarkan terbuka selama sistem dijalankan
 ================================================================================
                          TEST BACKEND SUDAH JALAN
 ================================================================================
