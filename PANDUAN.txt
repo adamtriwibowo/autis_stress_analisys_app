@@ -1,0 +1,123 @@
+================================================================================
+                    AUTISM STRESS DETECTION SYSTEM
+                         Panduan Lengkap
+================================================================================
+
+⚠️  ERROR "Network Error" atau "Terjadi kesalahan pada sistem"?
+    → INI PENYEBABNYA: Backend belum berjalan!
+
+================================================================================
+                         SOLUSI CEPAT (3 LANGKAH)
+================================================================================
+
+LANGKAH 1: Buka Terminal/Command Prompt
+────────────────────────────────────────
+   Tekan Win + R
+   Ketik: cmd
+   Enter
+
+
+LANGKAH 2: Jalankan Backend
+────────────────────────────────────────
+   Ketik perintah ini (copy-paste):
+   
+   cd "D:\DATA MASTER\S2 ADAM\adamtriwibowo\ROADMAP\Internet Of Things\autisme_stress_html\backend"
+   uvicorn main:app --host 0.0.0.0 --port 8000
+   
+   Tekan Enter
+   
+   TUNGGU sampai muncul pesan:
+   ✓ Loaded 20 patient records
+   ✓ Model loaded successfully!
+   INFO:     Uvicorn running on http://0.0.0.0:8000
+   
+   JANGAN TUTUP WINDOW INI!
+
+
+LANGKAH 3: Jalankan Frontend (Terminal BARU)
+────────────────────────────────────────
+   Buka terminal BARU (Win + R → cmd lagi)
+   
+   Ketik perintah ini (copy-paste):
+   
+   cd "D:\DATA MASTER\S2 ADAM\adamtriwibowo\ROADMAP\Internet Of Things\autisme_stress_html\frontend"
+   npm start
+   
+   Tekan Enter
+   
+   TUNGGU browser terbuka otomatis di http://localhost:3000
+
+================================================================================
+                         CARA ALTERNATIF (MUDAH)
+================================================================================
+
+   Double-click file ini: RUN.bat
+   
+   Script akan menjalankan backend + frontend otomatis!
+
+================================================================================
+                         TEST BACKEND SUDAH JALAN
+================================================================================
+
+   Buka browser, ketik: http://localhost:8000/health
+   
+   Harus muncul:
+   {"status":"healthy","model_loaded":true,"patients_count":20}
+   
+   Jika muncul → Backend SIAP!
+   Jika error → Backend belum jalan, ulangi LANGKAH 2
+
+================================================================================
+                         STRUKTUR FILE
+================================================================================
+
+   autism_stress_html/
+   │
+   ├── RUN.bat                    ← Jalankan ini (otomatis)
+   ├── backend/
+   │   ├── start.bat              ← Jalankan backend manual
+   │   ├── main.py                ← Backend code
+   │   └── dummy_patients.json    ← 20 data pasien dummy
+   │
+   └── frontend/
+       ├── start.bat              ← Jalankan frontend manual
+       └── src/
+           └── App.js             ← Frontend React UI
+
+================================================================================
+                         TROUBLESHOOTING
+================================================================================
+
+MASALAH: "Port 8000 already in use"
+SOLUSI:  taskkill /F /IM python.exe
+         Lalu jalankan ulang backend
+
+MASALAH: "npm: command not found"  
+SOLUSI:  Install Node.js dari nodejs.org
+
+MASALAH: "uvicorn: command not found"
+SOLUSI:  cd backend
+         pip install -r requirements.txt
+
+MASALAH: Frontend tetap error setelah backend jalan
+SOLUSI:  Refresh browser (F5)
+         Clear cache browser
+
+================================================================================
+                         FITUR SISTEM
+================================================================================
+
+✓ Prediksi tingkat stres (Low/Medium/High)
+✓ 19 fitur input (behavioral, fisiologis, psikologis)
+✓ Rekomendasi otomatis berdasarkan hasil
+✓ Tracking riwayat pasien
+✓ Dashboard statistik
+✓ 20 data pasien dummy untuk demo
+
+================================================================================
+                         KONTAK & BANTUAN
+================================================================================
+
+Jika masih ada masalah, baca: CARA_JALANKAN.md
+
+================================================================================
