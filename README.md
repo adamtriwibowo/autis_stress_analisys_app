@@ -1,0 +1,56 @@
+================================================================================
+                    AUTISM STRESS DETECTION SYSTEM
+================================================================================
+
+================================================================================
+                         CARA JALANKAN SISTEM
+================================================================================
+
+   Double-click file ini: RUN.bat
+   
+   Script akan menjalankan backend + frontend otomatis!
+
+================================================================================
+                         TEST BACKEND SUDAH JALAN
+================================================================================
+
+   Buka browser, ketik: http://localhost:8000/health
+   
+   Harus muncul:
+   {"status":"healthy","model_loaded":true,"patients_count":20}
+   
+   Jika muncul → Backend SIAP!
+   Jika error → Backend belum jalan, ulangi LANGKAH 2
+
+================================================================================
+                         STRUKTUR FILE
+================================================================================
+
+   auts_stress_analisys_app/
+   │
+   ├── RUN.bat                    ← Jalankan ini (otomatis)
+   ├── backend/
+   │   ├── start.bat              ← Jalankan backend manual
+   │   ├── main.py                ← Backend code
+   │   └── dummy_patients.json    ← 20 data pasien dummy
+   │
+   └── frontend/
+       ├── start.bat              ← Jalankan frontend manual
+       └── src/
+           └── App.js             ← Frontend React UI
+
+
+================================================================================
+                         FITUR SISTEM
+================================================================================
+
+✓ Prediksi tingkat stres (Low/Medium/High)
+✓ 19 fitur input (behavioral, fisiologis, psikologis)
+✓ Rekomendasi otomatis berdasarkan hasil
+✓ Tracking riwayat pasien
+✓ Dashboard statistik
+✓ 20 data pasien dummy untuk demo
+
+================================================================================
+
+Tugas : Internet Of Things (Kelompok 2)
