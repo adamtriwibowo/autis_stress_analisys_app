@@ -205,14 +205,14 @@ autis_stress_analisys_app/
 
 ## 👥 Kontributor
 
-Dikembangkan oleh **Adam Triwibowo**  
-Untuk pertanyaan dan kolaborasi: [adam.bowo@gmail.com](mailto:adam.bowo@gmail.com)
+Dikembangkan oleh **Kelompok 2 : Adam Triwibowo & Dwiki Ilham**  
+Untuk pertanyaan dan kolaborasi: [adam.tw@mhs.usk.ac.id](mailto:adam.tw@mhs.usk.ac.id)
 
 ---
 
 ## 📄 License
 
-Project ini dibuat untuk tujuan edukasi dan penelitian.
+Project ini dibuat untuk tujuan edukasi dan penelitian .
 
 ---
 
