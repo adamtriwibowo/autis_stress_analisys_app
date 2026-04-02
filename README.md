@@ -1,48 +1,7 @@
-================================================================================
-                    AUTISM STRESS DETECTION SYSTEM
-================================================================================
-
-================================================================================
-                         CARA JALANKAN SISTEM
-================================================================================
-
-   Double-click file ini: RUN.bat
-   
-   Script akan menjalankan backend + frontend otomatis!
-
-================================================================================
-                         TEST BACKEND SUDAH JALAN
-================================================================================
-
-   Buka browser, ketik: http://localhost:8000/health
-   
-   Harus muncul:
-   {"status":"healthy","model_loaded":true,"patients_count":20}
-   
-   Jika muncul → Backend SIAP!
-   Jika error → Backend belum jalan, ulangi LANGKAH 2
-
-================================================================================
-                         STRUKTUR FILE
-================================================================================
-
-   auts_stress_analisys_app/
-   │
-   ├── RUN.bat                    ← Jalankan ini (otomatis)
-   ├── backend/
-   │   ├── start.bat              ← Jalankan backend manual
-   │   ├── main.py                ← Backend code
-   │   └── dummy_patients.json    ← 20 data pasien dummy
-   │
-   └── frontend/
-       ├── start.bat              ← Jalankan frontend manual
-       └── src/
-           └── App.js             ← Frontend React UI
+Implementasi Algoritma Random Forest untuk Deteksi Dini Tingkat Stres pada Pasien Autism Spectrum Disorder Berbasis Web Application
 
 
-================================================================================
-                         FITUR SISTEM
-================================================================================
+FITUR SISTEM
 
 ✓ Prediksi tingkat stres (Low/Medium/High)
 ✓ 19 fitur input (behavioral, fisiologis, psikologis)
@@ -51,6 +10,12 @@
 ✓ Dashboard statistik
 ✓ 20 data pasien dummy untuk demo
 
-================================================================================
+
+Sistem diimplementasikan menggunakan teknologi berikut:
+	Backend: Python 3.x, FastAPI, Uvicorn, Scikit-learn, Pandas, NumPy
+	Frontend: React 18, React Bootstrap, Recharts, Axios
+	ML Pipeline: StandardScaler untuk preprocessing, Random Forest untuk classification
+	Deployment: Local server dengan opsi deployment cloud
+
 
 Tugas : Internet Of Things (Kelompok 2)
