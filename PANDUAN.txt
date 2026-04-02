@@ -3,52 +3,8 @@
                          Panduan Lengkap
 ================================================================================
 
-⚠️  ERROR "Network Error" atau "Terjadi kesalahan pada sistem"?
-    → INI PENYEBABNYA: Backend belum berjalan!
-
 ================================================================================
-                         SOLUSI CEPAT (3 LANGKAH)
-================================================================================
-
-LANGKAH 1: Buka Terminal/Command Prompt
-────────────────────────────────────────
-   Tekan Win + R
-   Ketik: cmd
-   Enter
-
-
-LANGKAH 2: Jalankan Backend
-────────────────────────────────────────
-   Ketik perintah ini (copy-paste):
-   
-   cd "D:\DATA MASTER\S2 ADAM\adamtriwibowo\ROADMAP\Internet Of Things\autisme_stress_html\backend"
-   uvicorn main:app --host 0.0.0.0 --port 8000
-   
-   Tekan Enter
-   
-   TUNGGU sampai muncul pesan:
-   ✓ Loaded 20 patient records
-   ✓ Model loaded successfully!
-   INFO:     Uvicorn running on http://0.0.0.0:8000
-   
-   JANGAN TUTUP WINDOW INI!
-
-
-LANGKAH 3: Jalankan Frontend (Terminal BARU)
-────────────────────────────────────────
-   Buka terminal BARU (Win + R → cmd lagi)
-   
-   Ketik perintah ini (copy-paste):
-   
-   cd "D:\DATA MASTER\S2 ADAM\adamtriwibowo\ROADMAP\Internet Of Things\autisme_stress_html\frontend"
-   npm start
-   
-   Tekan Enter
-   
-   TUNGGU browser terbuka otomatis di http://localhost:3000
-
-================================================================================
-                         CARA ALTERNATIF (MUDAH)
+                         CARA JALANKAN 
 ================================================================================
 
    Double-click file ini: RUN.bat
@@ -71,7 +27,7 @@ LANGKAH 3: Jalankan Frontend (Terminal BARU)
                          STRUKTUR FILE
 ================================================================================
 
-   autism_stress_html/
+   auts_stress_analisys_app/
    │
    ├── RUN.bat                    ← Jalankan ini (otomatis)
    ├── backend/
@@ -84,24 +40,6 @@ LANGKAH 3: Jalankan Frontend (Terminal BARU)
        └── src/
            └── App.js             ← Frontend React UI
 
-================================================================================
-                         TROUBLESHOOTING
-================================================================================
-
-MASALAH: "Port 8000 already in use"
-SOLUSI:  taskkill /F /IM python.exe
-         Lalu jalankan ulang backend
-
-MASALAH: "npm: command not found"  
-SOLUSI:  Install Node.js dari nodejs.org
-
-MASALAH: "uvicorn: command not found"
-SOLUSI:  cd backend
-         pip install -r requirements.txt
-
-MASALAH: Frontend tetap error setelah backend jalan
-SOLUSI:  Refresh browser (F5)
-         Clear cache browser
 
 ================================================================================
                          FITUR SISTEM
@@ -115,9 +53,5 @@ SOLUSI:  Refresh browser (F5)
 ✓ 20 data pasien dummy untuk demo
 
 ================================================================================
-                         KONTAK & BANTUAN
-================================================================================
 
-Jika masih ada masalah, baca: CARA_JALANKAN.md
-
-================================================================================
+Tugas : Internet Of Things (Kelompok 2)
