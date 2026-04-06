@@ -37,6 +37,51 @@ function App() {
     }));
   };
 
+  const loadPreset = (level) => {
+    const presets = {
+      low: {
+        patient_name: '',
+        age: 10,
+        gender: 1,
+        A1: 1, A2: 1, A3: 1, A4: 1, A5: 1, A6: 1, A7: 1, A8: 1, A9: 1, A10: 1,
+        heart_rate: 70,
+        sleep_quality: 8.0,
+        activity_level: 8.0,
+        anxiety_level: 2.0,
+        mood_score: 8.0,
+        social_engagement: 8.0,
+        family_history_asd: 0
+      },
+      medium: {
+        patient_name: '',
+        age: 12,
+        gender: 1,
+        A1: 2, A2: 2, A3: 2, A4: 2, A5: 2, A6: 2, A7: 2, A8: 2, A9: 2, A10: 2,
+        heart_rate: 100,
+        sleep_quality: 5.0,
+        activity_level: 5.0,
+        anxiety_level: 5.0,
+        mood_score: 5.0,
+        social_engagement: 5.0,
+        family_history_asd: 0
+      },
+      high: {
+        patient_name: '',
+        age: 15,
+        gender: 1,
+        A1: 3, A2: 3, A3: 3, A4: 3, A5: 3, A6: 3, A7: 3, A8: 3, A9: 3, A10: 3,
+        heart_rate: 135,
+        sleep_quality: 1.5,
+        activity_level: 2.0,
+        anxiety_level: 9.5,
+        mood_score: 1.5,
+        social_engagement: 1.5,
+        family_history_asd: 1
+      }
+    };
+    setFormData(presets[level]);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -123,6 +168,22 @@ function App() {
                   <h5>Input Data Pasien</h5>
                 </Card.Header>
                 <Card.Body>
+                  {/* Preset Buttons */}
+                  <div className="mb-3">
+                    <label className="form-label fw-bold">Preset Cepat (untuk testing):</label>
+                    <div className="d-flex gap-2 flex-wrap">
+                      <Button variant="outline-success" size="sm" onClick={() => loadPreset('low')}>
+                        ✅ Low Stress (0-33)
+                      </Button>
+                      <Button variant="outline-warning" size="sm" onClick={() => loadPreset('medium')}>
+                        ⚠️ Medium Stress (34-66)
+                      </Button>
+                      <Button variant="outline-danger" size="sm" onClick={() => loadPreset('high')}>
+                        🚨 High Stress (67-100)
+                      </Button>
+                    </div>
+                  </div>
+
                   <Form onSubmit={handleSubmit}>
                     <Row>
                       <Col md={6}>

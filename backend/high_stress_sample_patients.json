@@ -1,0 +1,83 @@
+[
+  {
+    "id": 101,
+    "timestamp": "2026-04-06T10:00:00.000000",
+    "patient_name": "Rudi Hermawan",
+    "input_data": {
+      "patient_name": "Rudi Hermawan",
+      "age": 15,
+      "gender": 1,
+      "A1": 3,
+      "A2": 3,
+      "A3": 3,
+      "A4": 3,
+      "A5": 3,
+      "A6": 3,
+      "A7": 3,
+      "A8": 3,
+      "A9": 3,
+      "A10": 3,
+      "heart_rate": 135,
+      "sleep_quality": 1.2,
+      "activity_level": 2.0,
+      "anxiety_level": 9.8,
+      "mood_score": 1.5,
+      "social_engagement": 1.2,
+      "family_history_asd": 1
+    }
+  },
+  {
+    "id": 102,
+    "timestamp": "2026-04-06T11:00:00.000000",
+    "patient_name": "Dian Purnama",
+    "input_data": {
+      "patient_name": "Dian Purnama",
+      "age": 8,
+      "gender": 0,
+      "A1": 3,
+      "A2": 3,
+      "A3": 3,
+      "A4": 3,
+      "A5": 3,
+      "A6": 3,
+      "A7": 3,
+      "A8": 3,
+      "A9": 3,
+      "A10": 3,
+      "heart_rate": 128,
+      "sleep_quality": 1.5,
+      "activity_level": 1.8,
+      "anxiety_level": 9.5,
+      "mood_score": 1.8,
+      "social_engagement": 1.5,
+      "family_history_asd": 1
+    }
+  },
+  {
+    "id": 103,
+    "timestamp": "2026-04-06T12:00:00.000000",
+    "patient_name": "Fajar Nugroho",
+    "input_data": {
+      "patient_name": "Fajar Nugroho",
+      "age": 12,
+      "gender": 1,
+      "A1": 3,
+      "A2": 3,
+      "A3": 3,
+      "A4": 3,
+      "A5": 3,
+      "A6": 3,
+      "A7": 3,
+      "A8": 3,
+      "A9": 3,
+      "A10": 2,
+      "heart_rate": 130,
+      "sleep_quality": 1.8,
+      "activity_level": 2.2,
+      "anxiety_level": 9.2,
+      "mood_score": 2.0,
+      "social_engagement": 1.8,
+      "family_history_asd": 1
+    }
+  }
+]

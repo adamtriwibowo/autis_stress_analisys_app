@@ -75,6 +75,16 @@ class MyHandler(BaseHTTPRequestHandler):
             prediction = int(model.predict(X_scaled)[0])
             probabilities = model.predict_proba(X_scaled)[0]
             stress_score = float(np.sum(probabilities * [0, 50, 100]))
+            
+            # Override prediction based on explicit threshold rules
+            # Low: 0-33, Medium: 34-66, High: 67-100
+            if stress_score <= 33:
+                prediction = 0  # Low
+            elif stress_score <= 66:
+                prediction = 1  # Medium
+            else:
+                prediction = 2  # High
+            
             confidence = float(np.max(probabilities))
             
             response = {
